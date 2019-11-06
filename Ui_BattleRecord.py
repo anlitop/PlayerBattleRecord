@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\DDMS_Daily\BattleRecord.ui'
+# Form implementation generated from reading ui file 'e:\DDMS_DAILY\BattleRecord.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -41,9 +41,9 @@ class Ui_Battle(object):
         self.select_type.setAcceptDrops(False)
         self.select_type.setObjectName("select_type")
         self.gridLayout.addWidget(self.select_type, 2, 2, 1, 1)
-        self.lineEdit = QtWidgets.QLineEdit(self.gridLayoutWidget)
-        self.lineEdit.setObjectName("lineEdit")
-        self.gridLayout.addWidget(self.lineEdit, 4, 2, 1, 1)
+        self.battle_lineEdit = QtWidgets.QLineEdit(self.gridLayoutWidget)
+        self.battle_lineEdit.setObjectName("battle_lineEdit")
+        self.gridLayout.addWidget(self.battle_lineEdit, 4, 2, 1, 1)
         self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
         self.label_2.setObjectName("label_2")
         self.gridLayout.addWidget(self.label_2, 3, 0, 1, 1)
@@ -53,9 +53,9 @@ class Ui_Battle(object):
         self.label_4 = QtWidgets.QLabel(self.gridLayoutWidget)
         self.label_4.setObjectName("label_4")
         self.gridLayout.addWidget(self.label_4, 5, 0, 1, 1)
-        self.lineEdit_2 = QtWidgets.QLineEdit(self.gridLayoutWidget)
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.gridLayout.addWidget(self.lineEdit_2, 5, 2, 1, 1)
+        self.account_lineEdit = QtWidgets.QLineEdit(self.gridLayoutWidget)
+        self.account_lineEdit.setObjectName("account_lineEdit")
+        self.gridLayout.addWidget(self.account_lineEdit, 5, 2, 1, 1)
         self.copy_sql_btn = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.copy_sql_btn.setObjectName("copy_sql_btn")
         self.gridLayout.addWidget(self.copy_sql_btn, 3, 3, 1, 1)

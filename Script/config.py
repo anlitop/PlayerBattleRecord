@@ -14,12 +14,16 @@ class NpEncoder(json.JSONEncoder):
             return super(NpEncoder, self).default(obj)
 
 
-def get_config():
-    with open("Config.json",'r',encoding = 'utf-8') as f:
+def get_config(name):
+    with open(name,'r',encoding = 'utf-8') as f:
         return load(f)
+def save_config(kdict):
+    content=dumps(kdict,ensure_ascii=False,cls=NpEncoder)
+    with open("Config.json",'w',encoding = 'utf-8') as f:
+        f.write(content)
 def save_dict(kdict):
     content=dumps(kdict,ensure_ascii=False,cls=NpEncoder)
-    with open("kdict.json",'w',encoding = 'utf-8') as f:
+    with open("Config.json",'w',encoding = 'utf-8') as f:
         f.write(content)
 def get_dict(name):
     with open(name,'r',encoding = 'utf-8') as f:

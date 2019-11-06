@@ -62,7 +62,7 @@
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="battle_lineEdit"/>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_2">
@@ -86,7 +86,7 @@
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QLineEdit" name="account_lineEdit"/>
      </item>
      <item row="3" column="3">
       <widget class="QPushButton" name="copy_sql_btn">
