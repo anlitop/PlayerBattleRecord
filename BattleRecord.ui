@@ -89,7 +89,7 @@
       <widget class="QLineEdit" name="lineEdit_2"/>
      </item>
      <item row="3" column="3">
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="copy_sql_btn">
        <property name="text">
         <string>复制语句</string>
        </property>
