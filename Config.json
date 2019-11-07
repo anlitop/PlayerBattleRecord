@@ -53,15 +53,4 @@
 	"结果保存路径": "F:/DDMS_Daily/Resoult/",
 	"sql_date": "2019-11-06",
 	"tga_url": "http://thinkgame2.shandw.com:8993",
-	"sql_get_battle":,
-	"sql_get_account":,
-	"sql_get_cards":'''select "#account_id",heroid
-from v_event_13
-where "$part_event"='hero' and "#account_id" in (
-    select distinct "#account_id"
-    from v_event_13
-    where "$part_event"='register' and "$part_date"=${0}
-
-) and subtype='add' and "$part_date"=${0} and heroid not in('U101','U104','U118','U113','U124','S003','U112','U128','Z000') and  before_cnt=0 and after_cnt=1
-group by "#account_id",heroid '''
 }
