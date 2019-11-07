@@ -1,0 +1,7 @@
+select distinct "#account_id"
+from v_event_13
+where "$part_event"='login' and "#account_id" in (
+    select distinct "#account_id"
+    from v_event_13
+    where "$part_event"='register' and "$part_date"=${0}
+) and "$part_date"=${1}

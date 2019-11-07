@@ -38,7 +38,7 @@ def init_player(kdict,key):
     kdict[key]["战斗胜率分布"].append(0)
     kdict[key]["段位分布"].append(0)
     kdict[key]["付费玩家分布"].append(0)
-
+	kdict[key]["玩家拥有的卡牌"].append(set())
     
 
 def update_player(kdict,key,data_content):

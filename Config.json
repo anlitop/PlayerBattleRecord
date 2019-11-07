@@ -1,1 +1,67 @@
-{"plt": ["wx", "wx_2", "4399", "sdw", "tt", "huawei", "xiaomi", "oppo", "vivo", "qq", "qzone", "hupu"], "race_type": [1011, 1010], "pvp_level": [1, 16], "pve_level": [1, 15], "active_player_battle_times": 3, "battle_area": [["wx", "oppo", "tt"], ["wx_2", "huawei", "vivo", "qq", "hupu"], ["qzone", "sdw"]], "date": "2019/10/16 0:00:00", "累计充值表格": "", "封王之路表格": "", "物品表格": "E:\\H5Game\\trunk\\MsgWar\\laya\\table", "战斗记录文件路径": "E:/DDMS_DAILY/Data/Battle/battle.csv", "次留玩家文件路径": "F:/DDMS_Daily/Data/Battle/account.csv", "结果保存路径": "F:/DDMS_Daily/Resoult/", "sql_date": "2019-11-06"}
+{
+	"plt": [
+		"wx",
+		"wx_2",
+		"4399",
+		"sdw",
+		"tt",
+		"huawei",
+		"xiaomi",
+		"oppo",
+		"vivo",
+		"qq",
+		"qzone",
+		"hupu"
+	],
+	"race_type": [
+		1011,
+		1010
+	],
+	"pvp_level": [
+		1,
+		16
+	],
+	"pve_level": [
+		1,
+		15
+	],
+	"active_player_battle_times": 3,
+	"battle_area": [
+		[
+			"wx",
+			"oppo",
+			"tt"
+		],
+		[
+			"wx_2",
+			"huawei",
+			"vivo",
+			"qq",
+			"hupu"
+		],
+		[
+			"qzone",
+			"sdw"
+		]
+	],
+	"date": "2019/10/16 0:00:00",
+	"累计充值表格": "",
+	"封王之路表格": "",
+	"物品表格": "E:/H5Game/trunk/MsgWar/laya/table",
+	"战斗记录文件路径": "E:/DDMS_DAILY/Data/Battle/battle.csv",
+	"次留玩家文件路径": "F:/DDMS_Daily/Data/Battle/account.csv",
+	"结果保存路径": "F:/DDMS_Daily/Resoult/",
+	"sql_date": "2019-11-06",
+	"tga_url": "http://thinkgame2.shandw.com:8993",
+	"sql_get_battle":,
+	"sql_get_account":,
+	"sql_get_cards":'''select "#account_id",heroid
+from v_event_13
+where "$part_event"='hero' and "#account_id" in (
+    select distinct "#account_id"
+    from v_event_13
+    where "$part_event"='register' and "$part_date"=${0}
+
+) and subtype='add' and "$part_date"=${0} and heroid not in('U101','U104','U118','U113','U124','S003','U112','U128','Z000') and  before_cnt=0 and after_cnt=1
+group by "#account_id",heroid '''
+}

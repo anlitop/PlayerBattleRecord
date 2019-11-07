@@ -1,0 +1,8 @@
+select "#account_id",race_type,is_win,count(*) as times
+from v_event_13
+where "$part_event"='pvp' and "#account_id" in (
+    select distinct "#account_id"
+    from v_event_13
+    where "$part_event"='register' and "$part_date"=${0}
+) and "$part_date"=${0}
+group by "#account_id",race_type,is_win
